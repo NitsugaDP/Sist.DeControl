@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        <!--
+
+        var a;
+        var b;
+        var c;
+
+        function square(x){
+            return x*x 
+        }
+
+        function hypotenuse(a, b) {
+            return Math.sqrt(square(a) + square(b));
+        }
+  
+        function perimetro(a,b,c){
+            return a+b+c;
+        }
+
+       function area(a,b){
+            return (a*b)/2;
+        }
+
+        function resultado(){
+            var d;
+            var e;
+
+            c = hypotenuse(a, b);
+            d = perimetro(a,b,c);
+            e = area(a, b);
+
+            document.write ( "Hipotenusa:",c ); document.write ("<br/>");
+            document.write ( "Perimetro:",d); document.write ("<br/>");
+            document.write ( "Area:",e); document.write ("<br/>"); 
+    document.write("<br/><br/><p><a href=\"../index.html\">Comeback</a></p>");
+        
+            
+        }
+
+        function perdirDatos(){
+            a = Number(prompt("Ingresar un lado"))
+            b= Number(prompt("Ingresar otro lado"))
+
+            resultado()
+        }
+
+        //-->
+        </script>
+    </head>
+    <body>
+        <h3>Presiona para comenzar</h3> 
+         <input type="button" onclick="perdirDatos()" value="Call Function"> 
+     </body>
+</html>
