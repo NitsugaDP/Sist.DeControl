@@ -32,11 +32,11 @@ var f;
             L= Number(prompt("Ingresar L"))
             C= Number(prompt("Ingresar C"))
             f= Number(prompt("Ingresar f"));
-			document.write ("Resolucion");document.write ("<br/>");
- 			document.write ("El valor de la reactancia capacitiva es " +XC(f,C));document.write ("<br/>");
- 		 	document.write ("El valor de la reactancia inductiva es " +XL(f,L));document.write ("<br/>");
-		  	document.write ("El valor de la resistencia es " +Z(R,C,L,f));document.write ("<br/>");
- 			document.write ("El valor de PHI es " +phi(R,C,L,f));document.write ("<br/>");
+			
+ 			document.write ("XC = " +XC(f,C));document.write ("<br/>");
+ 		 	document.write ("XL = " +XL(f,L));document.write ("<br/>");
+		  	document.write ("R = " +Z(R,C,L,f));document.write ("<br/>");
+ 			document.write ("Phi = " +phi(R,C,L,f));document.write ("<br/>");
  			   document.write("<br/><br/><p><a href=\"../index.html\">Comeback</a></p>");
 }
  </script>
