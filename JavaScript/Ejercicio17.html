@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var R;
+var L;
+var C;
+var f;
+ 
+    function XC(f,C){
+        valorxc= (1/ (6.28 * f * C));
+ 		return valorxc;
+}	
+    function XL(f,L){
+        valorxl= (6.28 * f * L);                                         
+    	return valorxl;
+}
+ 		function square(x){
+        return x*x
+}
+		function Z(R,C,L,f){
+			cuadradoz= (square(R) + square((XL(f,L)-XC(f,C))));
+			valorz= Math.sqrt (cuadradoz);
+		return valorz;
+}
+		function phi(R,C,L,f){
+			valorphi=Math.atan (XL(f,L)-XC(f,C)/R);
+		return valorphi; 
+}
+        function pedirDatos(){
+            R = Number(prompt("Ingresar R"))
+            L= Number(prompt("Ingresar L"))
+            C= Number(prompt("Ingresar C"))
+            f= Number(prompt("Ingresar f"));
+			document.write ("Resolucion");document.write ("<br/>");
+ 			document.write ("El valor de la reactancia capacitiva es " +XC(f,C));document.write ("<br/>");
+ 		 	document.write ("El valor de la reactancia inductiva es " +XL(f,L));document.write ("<br/>");
+		  	document.write ("El valor de la resistencia es " +Z(R,C,L,f));document.write ("<br/>");
+ 			document.write ("El valor de PHI es " +phi(R,C,L,f));document.write ("<br/>");
+ 			   document.write("<br/><br/><p><a href=\"../index.html\">Comeback</a></p>");
+}
+ </script>
+ </head>
+   	 <body>
+ <h3>Press to start</h3> 
+ 
+  <input type="button" onclick="pedirDatos()" value="Call Function"> 
+ 
+    </body>
+   
+	</html>
