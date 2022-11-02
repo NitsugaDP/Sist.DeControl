@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        <!--
+          
+        var a;
+        var b;
+        var c;
+          
+        function esTriangulo(){
+    var Lado1= a+b;
+    var Lado2= a+c;         
+    var Lado3= b+c;
+        if (lado1 >= c ){
+    if (lado2 >= b){
+        if (lado3 >= a){
+document.write ("true");
+        } 
+        else{
+             document.write ("falso");
+        }
+    } 
+    else{
+         document.write ("falso");
+    } 
+} 
+  else {
+ document.write ("falso");
+  } 
+   document.write("<br/><br/><p><a href=\"../index.html\">Comeback</a></p>");
+}
+        function pedirDatos(){
+            a=Number(prompt("Lado 1"))
+            b=Number(prompt("Lado 2"))
+            c=Number(prompt("Lado 3"))
+
+            esTriangulo()
+        }
+
+        //-->
+        </script>
+    </head>
+    <body>
+       <h3>Press to start</h3> 
+     <input type="button" onclick="pedirDatos()" value="Call Function">    
+    </body>
+</html>
